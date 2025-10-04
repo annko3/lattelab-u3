@@ -3,7 +3,7 @@ function Footer() {
     <footer className="px-[5%] py-[40px] bg-brown-dark text-background flex flex-col items-center gap-10">
       <div className="flex w-full flex-wrap justify-between">
         <div className="flex flex-col w-auto gap-2">
-          <h4 className="font-bold">Desarrollado por:</h4>
+          <h4 className="font-bold text-xl">Desarrollado por:</h4>
           <p className="flex flex-row">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ function Footer() {
         </div>
 
         <div className="flex flex-col w-auto gap-2">
-          <h4 className="font-bold">Contáctanos:</h4>
+          <h4 className="font-bold text-xl">Contáctanos:</h4>
           <p className="flex flex-row">
             <svg
               xmlns="http://www.w3.org/2000/svg"
