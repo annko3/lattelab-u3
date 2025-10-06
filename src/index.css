@@ -18,3 +18,11 @@ body {
   font-weight: 400;
   margin: 0;
 }
+
+section {
+  padding: 54px 5%;
+}
+
+.outset-border {
+  border-style: outset;
+}

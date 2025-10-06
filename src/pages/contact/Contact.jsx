@@ -22,7 +22,7 @@ function Contact() {
 
   return (
     <main>
-      <section className="px-[5%] bg-background text-brown-dark py-[54px]">
+      <section className=" bg-background text-brown-dark">
         <div className="flex flex-col gap-[1rem] text-center items-center">
           <h1 className="text-4xl font-bold">¡Dejanos endulzarte el día!</h1>
           <p className="leading-7">
@@ -38,7 +38,7 @@ function Contact() {
         </div>
       </section>
 
-      <section className="px-[5%] bg-background-alt py-[54px] text-center">
+      <section className=" bg-background-alt  text-center">
         <h2 className="font-bold text-3xl mb-5 text-brown-dark">
           Métodos de contacto
         </h2>
@@ -172,7 +172,7 @@ function Contact() {
         </div>
       </section>
 
-      <section className="px-[5%] bg-background py-[54px] text-center">
+      <section className=" bg-background text-center">
         <h2 className="font-bold text-3xl mb-5 text-brown-dark">
           Contacte directamente con nuestro equipo
         </h2>
@@ -221,7 +221,7 @@ function Contact() {
         </div>
       </section>
 
-      <section className="px-[5%] bg-background-alt py-[54px] text-center">
+      <section className=" bg-background-alt text-center">
         <div className="flex flex-col sm:flex-row gap-[3rem] justify-center items-start">
           <div>
             <h2 className="font-bold text-3xl mb-5 text-brown-dark">
@@ -271,7 +271,7 @@ function Contact() {
         </div>
       </section>
 
-      <section className="px-[5%] bg-background py-[54px] text-center">
+      <section className=" bg-background text-center">
         <div className="mx-[40px] bg-[#ffffff] rounded-2xl shadow-2xl flex flex-col sm:flex-row gap-[40px] p-6">
           <div className="flex flex-col gap-3 sm:w-1/2 w-full">
             <h2 className="font-bold text-3xl mb-5 text-[#5e3c23]">
