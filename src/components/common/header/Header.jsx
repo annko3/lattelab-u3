@@ -43,16 +43,16 @@ function Header() {
         <div className="bg-[#a9745c] text-center">
           <nav>
             <ul className="flex gap-[20px] py-[10px] justify-center flex-wrap text-white">
-              <li>
+              <li className="hover:bg-beige hover:text-brown-pink p-2 rounded-2xl font-bold">
                 <Link to="/">Inicio</Link>
               </li>
-              <li className="">
+              <li className="hover:bg-beige hover:text-brown-pink hover:font-bold p-2 rounded-2xl font-bold">
                 <Link to="/aboutUs">Quienes Somos</Link>
               </li>
-              <li>
+              <li className="hover:bg-beige hover:text-brown-pink hover:font-bold p-2 rounded-2xl font-bold">
                 <Link to="/menu">Menú</Link>
               </li>
-              <li>
+              <li className="hover:bg-beige hover:text-brown-pink hover:font-bold p-2 rounded-2xl font-bold">
                 <Link to="/contact">Contacto</Link>
               </li>
             </ul>

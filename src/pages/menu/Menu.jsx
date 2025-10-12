@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../../components/Products";
+import Products from "../../components/Products.jsx";
 
 function Menu() {
   const [typeService, setTypeService] = useState("");
@@ -109,7 +111,13 @@ function Menu() {
   };
 
   return (
-    <section className="bg-background-alt">
+    <>
+      <section className="bg-background text-center">
+        <h2 className="font-bold text-3xl mb-5 text-brown-dark">Productos</h2>
+        <Products/>
+      </section>
+
+      <section className="bg-background-alt">
       <form>
         <div
           id="service-form"
@@ -520,6 +528,8 @@ function Menu() {
         </div>
       </form>
     </section>
+    </>
+    
   );
 }
 
