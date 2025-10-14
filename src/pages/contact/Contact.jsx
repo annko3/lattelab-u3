@@ -271,7 +271,7 @@ function Contact() {
         </div>
       </section>
 
-      <section className=" bg-background text-center">
+      <section id="contact-form" className=" bg-background text-center">
         <div className="mx-[40px] bg-[#ffffff] rounded-2xl shadow-2xl flex flex-col sm:flex-row gap-[40px] p-6">
           <div className="flex flex-col gap-3 sm:w-1/2 w-full">
             <h2 className="font-bold text-3xl mb-5 text-[#5e3c23]">
