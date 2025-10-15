@@ -50,6 +50,9 @@ function Header() {
                 <Link to="/aboutUs">Quienes Somos</Link>
               </li>
               <li className="hover:bg-beige hover:text-brown-pink hover:font-bold p-2 rounded-2xl font-bold">
+                <Link to="/books">Libros</Link>
+              </li>
+              <li className="hover:bg-beige hover:text-brown-pink hover:font-bold p-2 rounded-2xl font-bold">
                 <Link to="/menu">Menú</Link>
               </li>
               <li className="hover:bg-beige hover:text-brown-pink hover:font-bold p-2 rounded-2xl font-bold">
