@@ -27,10 +27,7 @@ function Products() {
 
   
   return (
-    <section className="bg-background text-brown-dark p-5">
-      <h1 className="font-bold text-4xl mb-6 text-center">Productos</h1>
-
-      
+    <>
       <div className="mb-5 flex justify-center">
         <input
           type="text"
@@ -68,7 +65,7 @@ function Products() {
           </p>
         )}
       </div>
-    </section>
+    </>
   );
 }
 

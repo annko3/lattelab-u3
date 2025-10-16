@@ -112,8 +112,8 @@ function Menu() {
 
   return (
     <>
-      <section className="bg-background text-center">
-        <h2 className="font-bold text-3xl mb-5 text-brown-dark">Productos</h2>
+      <section className="bg-background text-center text-brown-dark">
+        <h1 className="font-bold text-4xl mb-5 text-brown-dark">Productos</h1>
         <Products/>
       </section>
 

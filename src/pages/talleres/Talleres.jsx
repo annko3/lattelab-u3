@@ -18,15 +18,15 @@ function Talleres() {
     .filter((t) => filtroTipo === "Todos" || t.tipo === filtroTipo);
 
   return (
-    <section className="bg-[var(--color-background)] text-[var(--color-brown-dark)] py-10">
-      <h2 className="text-3xl font-semibold mb-8 text-center">Nuestros Talleres</h2>
+    <section className="bg-background text-brown-dark text-center">
+      <h1 className="font-bold text-4xl mb-5 text-brown-dark">Nuestros Talleres</h1>
 
       <input
         type="text"
         placeholder="Buscar taller..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="mb-6 p-2 rounded-lg border border-[var(--color-brown-medium)] w-full max-w-md mx-auto block"
+        className="mb-6 p-2 rounded-lg border border-brown-medium w-full max-w-md mx-auto block"
       />
 
       <div className="flex justify-center gap-4 mb-6">
@@ -36,8 +36,8 @@ function Talleres() {
             onClick={() => setFiltroTipo(tipo)}
             className={`px-4 py-2 rounded-lg font-semibold border transition ${
               filtroTipo === tipo
-                ? "bg-[var(--color-brown-dark)] text-white shadow-lg"
-                : "bg-[var(--color-background-alt)] text-[var(--color-brown-dark)] border-[var(--color-brown-medium)] hover:bg-[var(--color-brown-medium)] hover:text-white"
+                ? "bg-brown-dark text-white shadow-lg"
+                : "bg-background-alt text-brown-dark border-brown-medium hover:bg-brown-medium hover:text-white"
             }`}
           >
             {tipo}
@@ -49,7 +49,7 @@ function Talleres() {
         {filteredTalleres.map((taller) => (
           <div
             key={taller.id}
-            className="bg-[var(--color-background-alt)] rounded-xl shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:shadow-red"
+            className="bg-background-alt rounded-xl shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:shadow-red"
           >
             <img
               src={taller.imagen}
@@ -58,8 +58,8 @@ function Talleres() {
             />
             <h3 className="text-xl font-semibold">{taller.nombre}</h3>
             <p className="text-sm mb-2">{taller.descripcion}</p>
-            <p className="text-[var(--color-brown-medium)] font-medium">{taller.horario}</p>
-            <button className="mt-3 bg-[var(--color-brown-medium)] text-white py-2 px-4 rounded-lg hover:bg-[var(--color-brown-dark)] transition">
+            <p className="text-brown-medium font-medium">{taller.horario}</p>
+            <button className="mt-3 bg-brown-medium text-white py-2 px-4 rounded-lg hover:bg-brown-dark transition">
               Más info
             </button>
           </div>
