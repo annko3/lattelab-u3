@@ -119,7 +119,7 @@ function Home() {
       </section>
 
       
-      <section className="py-10 white-bg">
+      <section className="py-10 bg-background">
         <h2 className="text-3xl font-bold text-center text-brown-dark mb-8">
           Lo que dicen nuestros clientes
         </h2>

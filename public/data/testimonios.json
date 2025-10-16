@@ -19,5 +19,29 @@
     "rol": "Visitante regular",
     "mensaje": "Lattelab tiene los mejores granos y atención personalizada. 100% recomendado.",
     "imagen": "/src/assets/images/client3.png"
+  },
+
+  {
+    "id": 4,
+    "nombre": "Hernán Dario",
+    "rol": "Cliente regular",
+    "mensaje": "Excelente lugar para disfrutar de un buen café y aprender sobre su preparación.",
+    "imagen": "/src/assets/images/client4.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Ana María",
+    "rol": "Amante del café",
+    "mensaje": "El ambiente es acogedor y el personal es muy amable. ¡Me encanta venir aquí!",
+    "imagen": "/src/assets/images/client5.png"
+  
+  },  {
+    "id": 6,
+    "nombre": "Luis Fernando",
+    "rol": "Cliente frecuente",
+    "mensaje": "La variedad de cafés es impresionante. Siempre encuentro algo nuevo para probar.",
+    "imagen": "/src/assets/images/client6.png"
   }
+
 ]
+
