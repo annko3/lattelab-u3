@@ -5,7 +5,6 @@ import Testimonios from "../../components/Testimonios";
 function Home() {
   return (
     <main>
-      
       <section className="flex flex-col bg-background text-brown-dark items-center text-center">
         <h1 className="font-bold text-4xl mb-5 text-brown-dark">
           Bienvenidos a <span className="text-brown-pink">Lattelab</span>
@@ -42,7 +41,6 @@ function Home() {
         />
       </section>
 
-      
       <section className="bg-background-alt text-brown-dark px-6 py-16 text-center">
         <h2 className="font-bold text-3xl mb-5 text-brown-dark">
           ¿Por qué elegir <span className="text-brown-pink">Lattelab</span>?
@@ -54,7 +52,6 @@ function Home() {
         </p>
 
         <div className="flex flex-col md:flex-row justify-center gap-10">
-          
           <div className="flex flex-col items-center p-6 text-center hover:-translate-y-1 transition-transform">
             <svg
               fill="#A9745C"
@@ -74,7 +71,6 @@ function Home() {
             </p>
           </div>
 
-          
           <div className="flex flex-col items-center p-6 text-center hover:-translate-y-1 transition-transform">
             <svg
               width="64px"
@@ -96,16 +92,29 @@ function Home() {
             <p>Priorizamos empaques ecológicos y prácticas sostenibles.</p>
           </div>
 
-          
           <div className="flex flex-col items-center p-6 text-center hover:-translate-y-1 transition-transform">
             <svg
-              fill="#A9745C"
               width="64px"
               height="64px"
-              viewBox="0 0 56 56"
+              viewBox="0 0 15 15"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M 28.0000 27.1257 C 31.1936 27.1257 33.9415 24.2737 33.9415 20.5602 C 33.9415 16.8912 31.1787 14.1729 28.0000 14.1729 C 24.8213 14.1729 22.0584 16.9506 22.0584 20.5898 C 22.0584 24.2737 24.8064 27.1257 28.0000 27.1257 Z M 10.9029 27.4673 C 13.6658 27.4673 16.0722 24.9718 16.0722 21.7485 C 16.0722 18.5548 13.6509 16.1930 10.9029 16.1930 C 8.1401 16.1930 5.7040 18.6143 5.7188 21.7782 C 5.7188 24.9718 8.1252 27.4673 10.9029 27.4673 Z M 45.0970 27.4673 C 47.8748 27.4673 50.2811 24.9718 50.2811 21.7782 C 50.2811 18.6143 47.8599 16.1930 45.0970 16.1930 C 42.3491 16.1930 39.9278 18.5548 39.9278 21.7485 C 39.9278 24.9718 42.3342 27.4673 45.0970 27.4673 Z"></path>
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 4.5C7 2.01472 9.01472 0 11.5 0H15V3.5C15 5.98528 12.9853 8 10.5 8H8V15H7V11H4.5C2.01472 11 0 8.98528 0 6.5V3H3.5C4.91363 3 6.17502 3.65183 7 4.67133V4.5ZM8.14648 6.14642L11.1465 3.14642L11.8536 3.85353L8.85359 6.85353L8.14648 6.14642ZM6.14648 9.85353L3.14648 6.85353L3.85359 6.14642L6.85359 9.14642L6.14648 9.85353Z"
+                  fill="#A9745C"
+                ></path>{" "}
+              </g>
             </svg>
             <h3 className="font-bold text-2xl mb-3 text-brown-dark">
               Ambiente acogedor
@@ -118,7 +127,6 @@ function Home() {
         </div>
       </section>
 
-      
       <section className="py-10 bg-background">
         <h2 className="text-3xl font-bold text-center text-brown-dark mb-8">
           Lo que dicen nuestros clientes
