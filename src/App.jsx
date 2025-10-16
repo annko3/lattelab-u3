@@ -5,6 +5,10 @@ import Menu from "./pages/menu/Menu";
 import Contact from './pages/contact/Contact.jsx';
 import AboutUs from "./pages/aboutUs/AboutUs.jsx";
 import Books from './pages/books/Books.jsx';
+<<<<<<< HEAD
+=======
+import Talleres from "./pages/talleres/Talleres.jsx";
+>>>>>>> master
 import Header from './components/common/header/Header.jsx';
 import Footer from './components/common/footer/Footer.jsx';
 
@@ -21,6 +25,10 @@ function App() {
               <Route path='/books' element={<Books />}/>
               <Route path="/menu" element={<Menu />} />
               <Route path="/contact" element={<Contact />} />
+<<<<<<< HEAD
+=======
+              <Route path="/talleres" element={<Talleres />} />
+>>>>>>> master
             </Routes>
           </main>
 
