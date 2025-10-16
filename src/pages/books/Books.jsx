@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-<<<<<<< HEAD
-function Books() {
-  const [books, setBooks] = useState([]);
-=======
 function Libros() {
   const [libros, setLibros] = useState([]);
   const [busqueda, setBusqueda] = useState("");
   const [filtro, setFiltro] = useState("todos");
   const [categorias, setCategorias] = useState(["todos"]);
-
 
   const traducirCategoria = (cat) => {
     if (!cat) return "Sin categoría";
@@ -22,23 +17,12 @@ function Libros() {
     };
     return traducciones[cat] || cat;
   };
->>>>>>> master
 
   useEffect(() => {
     fetch("https://www.googleapis.com/books/v1/volumes?q=a&maxResults=25")
       .then((res) => res.json())
       .then((data) => {
         if (data.items) {
-<<<<<<< HEAD
-          const formattedBooks = data.items.map((book) => ({
-            id: book.id,
-            title: book.volumeInfo.title,
-            authors: book.volumeInfo.authors?.join(", ") || "Autor desconocido",
-            description: book.volumeInfo.description || "Sin descripción disponible.",
-            thumbnail: book.volumeInfo.imageLinks?.thumbnail || "/no-cover.png",
-          }));
-          setBooks(formattedBooks);
-=======
           const librosFormateados = data.items.map((libro) => ({
             id: libro.id,
             titulo: libro.volumeInfo.title,
@@ -49,51 +33,21 @@ function Libros() {
           }));
 
           const catsUnicas = Array.from(
-            new Set(
-              librosFormateados.map((l) => l.categoria).filter(Boolean)
-            )
+            new Set(librosFormateados.map((l) => l.categoria).filter(Boolean))
           );
-          setCategorias(["todos", ...catsUnicas]);
 
+          setCategorias(["todos", ...catsUnicas]);
           setLibros(librosFormateados);
->>>>>>> master
         }
       })
       .catch((error) => console.log("Error al cargar los libros: ", error));
   }, []);
 
-<<<<<<< HEAD
-  return (
-    <section className="bg-background text-brown-dark">
-      <h1 className="font-bold text-4xl mb-5 text-brown-dark">Libros</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 hover:cursor-pointer">
-        {books.map((book) => (
-          <div
-            key={book.id}
-            className="bg-white rounded-2xl outset-border border-1 border-brown-dark transition-transform duration-300 hover:scale-103 hover:shadow-lg hover:shadow-red overflow-hidden"
-          >
-            <img
-                src={book.thumbnail}
-                alt={book.title}
-                className="w-full object-cover rounded-lg mb-3"
-              />
-            <div className="p-4">
-              
-              <h3 className="font-bold text-2xl mb-5 text-brown-dark line-clamp-3">
-                {book.title}
-              </h3>
-              <p className="line-clamp-3">{book.description}</p>
-              <p className="font-light line-clamp-1">{book.authors}</p>
-            </div>
-            
-=======
   const librosFiltrados = libros.filter((libro) => {
     const coincideBusqueda =
       libro.titulo.toLowerCase().includes(busqueda.toLowerCase()) ||
       libro.autores.toLowerCase().includes(busqueda.toLowerCase());
-
     const coincideFiltro = filtro === "todos" || libro.categoria === filtro;
-
     return coincideBusqueda && coincideFiltro;
   });
 
@@ -135,12 +89,13 @@ function Libros() {
               className="w-full object-cover rounded-t-lg mb-3"
             />
             <div className="p-4 flex flex-col gap-2">
-              <h3 className="font-bold text-2xl text-brown-dark line-clamp-3">{libro.titulo}</h3>
+              <h3 className="font-bold text-2xl text-brown-dark line-clamp-3">
+                {libro.titulo}
+              </h3>
               <p className="line-clamp-3">{libro.descripcion}</p>
               <p className="font-light line-clamp-1">{libro.autores}</p>
               <p className="italic text-sm line-clamp-1">{libro.categoria}</p>
             </div>
->>>>>>> master
           </div>
         ))}
       </div>
@@ -148,8 +103,6 @@ function Libros() {
   );
 }
 
-<<<<<<< HEAD
-export default Books;
-=======
 export default Libros;
->>>>>>> master
+
+

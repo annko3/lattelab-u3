@@ -2,52 +2,22 @@ import React, { useEffect, useState } from "react";
 
 function Products() {
   const [products, setProducts] = useState([]);
-<<<<<<< HEAD
-=======
   const [search, setSearch] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
->>>>>>> master
 
+  
   useEffect(() => {
     fetch("./data/products.json")
       .then((res) => res.json())
       .then((data) => {
         const allProducts = [...data.beverages, ...data.desserts];
         setProducts(allProducts);
-<<<<<<< HEAD
-=======
-        setFilteredProducts(allProducts); 
->>>>>>> master
+        setFilteredProducts(allProducts);
       })
       .catch((error) => console.log("Error al cargar los productos: ", error));
   }, []);
 
-<<<<<<< HEAD
-  return (
-    <div className="flex flex-rows flex-wrap justify-center gap-10">
-      {products.map((product) => (
-        <div
-          key={product.id}
-          className="bg-white border-1 border-brown-dark outset-border w-60 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red rounded-2xl overflow-hidden"
-        >
-          <img src={product.image} alt={product.name} />
-          
-          <div className="flex flex-col p-2">
-            <h3 className="font-bold text-2xl mb-5 text-brown-dark">
-              {product.name}
-            </h3>
-            <p>{product.description}</p>
-          </div>
-          
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default Products;
-=======
- 
+  
   useEffect(() => {
     const filtered = products.filter((product) =>
       product.name.toLowerCase().includes(search.toLowerCase())
@@ -55,9 +25,12 @@ export default Products;
     setFilteredProducts(filtered);
   }, [search, products]);
 
+  
   return (
-    <>
-     
+    <section className="bg-background text-brown-dark p-5">
+      <h1 className="font-bold text-4xl mb-6 text-center">Productos</h1>
+
+      
       <div className="mb-5 flex justify-center">
         <input
           type="text"
@@ -68,17 +41,21 @@ export default Products;
         />
       </div>
 
-      
-      <div className="flex flex-rows flex-wrap justify-center gap-10">
+     
+      <div className="flex flex-wrap justify-center gap-10">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div
               key={product.id}
               className="bg-white border-1 border-brown-dark outset-border w-60 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red rounded-2xl overflow-hidden"
             >
-              <img src={product.image} alt={product.name} />
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full object-cover rounded-t-lg"
+              />
               <div className="flex flex-col p-2">
-                <h3 className="font-bold text-2xl mb-5 text-brown-dark">
+                <h3 className="font-bold text-2xl mb-2 text-brown-dark">
                   {product.name}
                 </h3>
                 <p>{product.description}</p>
@@ -86,12 +63,14 @@ export default Products;
             </div>
           ))
         ) : (
-          <p className="text-red text-xl mt-5">No se encontraron productos.</p>
+          <p className="text-red text-xl mt-5">
+            No se encontraron productos.
+          </p>
         )}
       </div>
-    </>
+    </section>
   );
 }
 
 export default Products;
->>>>>>> master
+
