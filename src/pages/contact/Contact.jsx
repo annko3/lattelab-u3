@@ -31,7 +31,7 @@ function Contact() {
             café? ¡Nos encantaría saber de ti!
           </p>
           <img
-            className="w-[40%] rounded-3xl"
+            className="w-[40%] rounded-3xl hover:scale-105 transition-transform duration-300"
             src={latte}
             alt="Latte art coffee cup"
           />
