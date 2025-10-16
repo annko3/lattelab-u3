@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "María López",
+    "rol": "Cliente frecuente",
+    "mensaje": "El mejor café que he probado. El ambiente es cálido y el servicio excelente.",
+    "imagen": "/src/assets/images/client1.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Méndez",
+    "rol": "Amante del café",
+    "mensaje": "Un lugar perfecto para relajarse y disfrutar un buen café con amigos.",
+    "imagen": "/src/assets/images/client2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Sofía García",
+    "rol": "Visitante regular",
+    "mensaje": "Lattelab tiene los mejores granos y atención personalizada. 100% recomendado.",
+    "imagen": "/src/assets/images/client3.png"
+  }
+]
